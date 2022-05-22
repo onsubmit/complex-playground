@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6",
+
+    "baseUrl": "src",
+    "outDir": "dist",
+    "paths": {
+      "ts/*": ["ts/*"],
+      "less/*": ["less/*"]
+    },
+
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "sourceMap": true
+  },
+
+  "include": ["src/ts/**/*", "test/**/*"],
+  "exclude": ["dist", "node_modules"]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "complex-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run lint && tsc",
+    "build-watch": "tsc -w",
+    "lint": "npx eslint --ext ts ./src/ts",
+    "lint-fix": "npx eslint --ext ts ./src/ts --fix",
+    "wp": "webpack",
+    "wpw": "webpack --watch",
+    "deploy": "gh-pages -d ./dist"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^4.0.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^11.0.0",
+    "prettier": "^2.6.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "worker-loader": "^3.0.8"
+  }
+}
